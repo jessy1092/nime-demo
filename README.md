@@ -1,6 +1,6 @@
-The case convertor ime in NIME
+The case convertor IME by NIME
 =============
-This is the simple demo for NIME. It's the case convertor IME. Implement by [JSZhuyin](https://timdream.org/jszhuyin/ ), [PIME](https://github.com/EasyIME/PIME), [NIME](https://github.com/EasyIME/NIME).
+This is the simple demo for NIME. It's the case convertor IME. Implement by [PIME](https://github.com/EasyIME/PIME), [NIME](https://github.com/EasyIME/NIME).
 
 
 #### Node
@@ -11,7 +11,7 @@ This is the simple demo for NIME. It's the case convertor IME. Implement by [JSZ
 
 #### Development
 
-Now PIME has NIME engine. Please install PIME >= 0.14.0
+Now PIME has NIME engine. Please install PIME >= 0.15.0
 
 - Prepare Node v6.x environment.
 - Install [PIME](https://github.com/EasyIME/PIME/releases) v0.15.x
