@@ -1,6 +1,6 @@
-The case convertor IME by NIME
+The case converter IME by NIME
 =============
-This is the simple demo for NIME. It's the case convertor IME. Implement by [PIME](https://github.com/EasyIME/PIME), [NIME](https://github.com/EasyIME/NIME).
+This is the simple demo for NIME. It's the case converter IME. Implement by [PIME](https://github.com/EasyIME/PIME), [NIME](https://github.com/EasyIME/NIME).
 
 
 #### Node

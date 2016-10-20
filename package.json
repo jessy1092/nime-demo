@@ -1,7 +1,7 @@
 {
   "name": "nime-demo",
   "version": "0.1.0",
-  "description": "The simple demo in NIME. It's the case convertor.",
+  "description": "The simple demo in NIME. It's the case converter.",
   "main": "index.js",
   "scripts": {
     "start": "cross-env UV_THREADPOOL_SIZE=32 DEBUG=nime:* node server.js",
