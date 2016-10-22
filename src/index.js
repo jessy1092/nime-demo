@@ -10,31 +10,29 @@ module.exports = {
     if (request['method'] === 'filterKeyDown') {
 
       let {charCode, seqNum} = request;
+      let char = String.fromCharCode(charCode);
 
       let response = {return: false, success: true, seqNum};
 
-      if ((charCode >= 'a'.charCodeAt(0) && charCode <= 'z'.charCodeAt(0)) ||
-        (charCode >= 'A'.charCodeAt(0) && charCode <= 'Z'.charCodeAt(0))) {
+      if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
         response['return'] = true;
       }
       return response;
-
     }
 
     if (request['method'] === 'onKeyDown') {
+
       let {charCode, seqNum} = request;
+      let char = String.fromCharCode(charCode);
       let commitString = '';
 
-      if ((charCode >= 'a'.charCodeAt(0) && charCode <= 'z'.charCodeAt(0))) {
-        commitString = String.fromCharCode(charCode).toUpperCase();
+      if (char >= 'a' && char <= 'z') {
+        commitString = char.toUpperCase();
       }
-      if ((charCode >= 'A'.charCodeAt(0) && charCode <= 'Z'.charCodeAt(0))) {
-        commitString = String.fromCharCode(charCode).toLowerCase();
+      if (char >= 'A' && char <= 'Z') {
+        commitString = char.toLowerCase();
       }
-
-      let response = {success: true, commitString, seqNum};
-
-      return response;
+      return {success: true, commitString, seqNum};
     }
 
     return {success: true, seqNum: request['seqNum']};
